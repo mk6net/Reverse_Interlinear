@@ -19,6 +19,7 @@ To use alongside your bible reading: Reverse Interlinear script to map KJV and s
 
 # Stuff I asked it to use
 - Thayers for Greek, BDB for Hebrew, possibly to consult the NETS Septuagint although I may have forgotten to specify the flavor.
+- I asked it to include Geneva bible and ESV as well as KJV. KJV should be the preference and default at all times. 
 
 
 # Installation
