@@ -44,21 +44,14 @@ Note: You only need to do this once. Repeat these commands only if you want to u
 
 Place interlinear.py in your working directory, alongside the cloned repositories.
 
-Run the script:
-
-python3 interlinear.py
-
-
 Make it executable:
 
 chmod +x interlinear.py
 
+Run the script (you're all done, now use it:
 
-The script handles setup, indexing, and standalone SQLite database creation as needed.
-
-4. Run the tool
-
-You're ready to go!
+interlinear.py
+ 
 
 The following examples demonstrate how to use the tool:
 
@@ -82,7 +75,7 @@ First-run note: The first lookup builds the index. This typically takes about 30
 
 Once the index is built, you generally won't need to repeat the setup unless you want to update the source repositories or rebuild the index.
 
-# Install foregn language fonts (OPTIONAL)
+# Install foreign language fonts (OPTIONAL)
 - See text file in this package
 
 keywords: bible, interlinear, lookup, look-up, mapping, verses, commandline, command line, offline
