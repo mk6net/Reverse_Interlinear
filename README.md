@@ -10,7 +10,7 @@ To use alongside your bible reading: Reverse Interlinear script to map KJV and s
 
 # Who made it
 
-- AI, to my specs but I didn't spend any time honing it yet.
+- AI, to my specs but I didn't spend any time honing, proofreading, or tweaking. It is what it is for now.
 - I spent about zero minutes on this. It seems to work fine and use the below data sets. That's fine for now.
 
 # Why 
