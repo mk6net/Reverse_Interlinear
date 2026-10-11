@@ -3,7 +3,10 @@ To use alongside your bible reading: Reverse Interlinear script to map KJV and s
 
 # What
 - A completely offline reverse interlinear you "make" using this install script. Even the fonts are offline (fonts not yet tested).
-- Note: After you get it setup, you can literally copy the directory to some other computer and run it there if you want. It's a "snapshot in time" of the datasets. So there is nothing to update. 
+
+# More Theory
+- After you get it setup, you can literally copy the directory to some other computer and run it there if you want. It's a "snapshot in time" of the datasets. So there is nothing to update. It's just python, consulting datasets, which it put on first-run into a sqllite db (standalone).
+- After it shoots out all the information, I had it re-print just the strongs information in case that is all you wanted from the run of the script. All details will be above that, so just run with "|" if you wanted to show it on the screen.
 
 # Who made it
 
