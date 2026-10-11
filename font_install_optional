@@ -1,0 +1,52 @@
+Optional: Install Greek and Hebrew Fonts
+Installing additional fonts can improve the display of Greek, Hebrew, and other special characters, particularly in terminal output.
+
+There are two options: install fonts through your package manager or download and install them manually.
+
+Fonts: Two options, one use the internet to install, or two, download the fonts and install at your leisure
+
+
+
+Option A: Online installation
+sudo apt install fonts-dejavu fonts-noto
+
+
+Option B: Offline font installation
+
+Use this method when you want to download font files manually.
+
+1. Create a directory for the fonts
+mkdir -p ~/fonts-offline
+cd ~/fonts-offline
+
+2. Download the fonts
+mkdir -p ~/fonts-offline && cd ~/fonts-offline
+
+# Cousine: monospace with accented Greek and pointed Hebrew (best terminal font)
+curl -LO "https://github.com/google/fonts/raw/main/ofl/cousine/Cousine-Regular.ttf"
+curl -LO "https://github.com/google/fonts/raw/main/ofl/cousine/Cousine-Bold.ttf"
+curl -LO "https://github.com/google/fonts/raw/main/ofl/cousine/Cousine-Italic.ttf"
+curl -LO "https://github.com/google/fonts/raw/main/ofl/cousine/Cousine-BoldItalic.ttf"
+
+# Noto Sans Mono (Greek) and Noto Sans Hebrew (Hebrew fallback)
+curl -L -o NotoSansMono.ttf   "https://github.com/google/fonts/raw/main/ofl/notosansmono/NotoSansMono%5Bwdth,wght%5D.ttf"
+curl -L -o NotoSansHebrew.ttf "https://github.com/google/fonts/raw/main/ofl/notosanshebrew/NotoSansHebrew%5Bwdth,wght%5D.ttf"
+curl -L -o NotoSerif.ttf      "https://github.com/google/fonts/raw/main/ofl/notoserif/NotoSerif%5Bwdth,wght%5D.ttf"
+
+# DejaVu (whole family: Sans, Serif, Mono)
+curl -LO "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+
+# Gentium Plus (Greek for documents)
+curl -LO "https://github.com/silnrsi/font-gentium/releases/download/v6.200/GentiumPlus-6.200.zip"
+
+# Ezra SIL (Hebrew, the font the BDB lexicon was formatted for)
+curl -L -o EzraSIL.ttf "https://raw.githubusercontent.com/eliranwong/unabridged-BDB-Hebrew-lexicon/master/sileot.ttf"
+
+ls -lh
+
+3. Install the fonts (or just let them sit there knowing you have them and can install later)
+  cd fonts-offline
+  tar xjf dejavu-fonts-ttf-2.37.tar.bz2 && unzip -q GentiumPlus-6.200.zip
+  mkdir -p ~/.local/share/fonts
+  find . -name '*.ttf' -exec cp {} ~/.local/share/fonts/ \;
+  fc-cache -f && fc-list | grep -iE 'cousine|noto|dejavu|gentium|ezra' | head
