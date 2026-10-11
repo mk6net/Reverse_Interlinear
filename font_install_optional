@@ -1,17 +1,17 @@
 Optional: Install Greek and Hebrew Fonts
 Installing additional fonts can improve the display of Greek, Hebrew, and other special characters, particularly in terminal output.
 
-There are two options: install fonts through your package manager or download and install them manually.
-
-Fonts: Two options, one use the internet to install, or two, download the fonts and install at your leisure
+There are two options to do this: install fonts through your package manager or download and install them manually.
 
 
-
-Option A: Online installation
+======>Option A: Online installation
 sudo apt install fonts-dejavu fonts-noto
+/ ====== OPTION A
 
 
-Option B: Offline font installation
+OR........
+
+======>Option B: Offline font installation
 
 Use this method when you want to download font files manually.
 
@@ -44,9 +44,10 @@ curl -L -o EzraSIL.ttf "https://raw.githubusercontent.com/eliranwong/unabridged-
 
 ls -lh
 
-3. Install the fonts (or just let them sit there knowing you have them and can install later)
+3. Now that you have the fonts, Install the fonts (or just let them sit there knowing you have them and can install later).
   cd fonts-offline
   tar xjf dejavu-fonts-ttf-2.37.tar.bz2 && unzip -q GentiumPlus-6.200.zip
   mkdir -p ~/.local/share/fonts
   find . -name '*.ttf' -exec cp {} ~/.local/share/fonts/ \;
   fc-cache -f && fc-list | grep -iE 'cousine|noto|dejavu|gentium|ezra' | head
+/ ====== OPTION B
