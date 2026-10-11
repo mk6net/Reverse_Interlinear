@@ -1,4 +1,4 @@
-# Reverse_Interlinear
+# Bible_Reverse_Interlinear
 To use alongside your bible reading: Reverse Interlinear script to map KJV and sometimes ESV and others potentially to their STRONG'S numbers
 
 # What
