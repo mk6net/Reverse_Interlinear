@@ -85,3 +85,6 @@ Once the index is built, you generally won't need to repeat the setup unless you
 # Install foregn language fonts (OPTIONAL)
 - See text file in this package
 
+keywords: bible, interlinear, lookup, look-up, mapping, verses, commandline, command line, offline
+
+
